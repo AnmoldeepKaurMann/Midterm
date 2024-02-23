@@ -14,22 +14,18 @@ import java.util.Scanner;
  * change the code to use enums which avoids String input 
  * then print the week day names. 
  *
- * @author sivagamasrinivasan
- jn 22nd
+ * @author Anmol
+   Time: 9:30am
  */
+
 public class Days {
 
-    /**
-     * @param args the command line arguments
-     */
+    enum Day {
+        MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
+    }
+
     public static void main(String[] args) {
-         
-    Scanner in =new Scanner(System.in);
-    System.out.println("Enter the day number (one,two,three,four,five) in string");
-    String code = in.next();
-    Weekdays t= new Weekdays();
-    t.nameOfDay(code); 
-    }// TODO code application logic here
-    
-    
+        Weekdays weekdays = new Weekdays();
+        weekdays.printAllDays();
+    }
 }
